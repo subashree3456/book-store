@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Book.css";
 import axios from "axios";
 import Book from "./Book";
-const URL = "http://localhost:4000/books";
+const URL = "https://book-app-backend-om4l.onrender.com/books";
 const fetchHandler = async() => {
     return await axios.get(URL).then((res)=> res.data);
   };

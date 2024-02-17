@@ -10,7 +10,7 @@ const Book = (props) => {
    
     const deleteHandler = async () => {
       await axios
-        .delete(`http://localhost:4000/books/${_id}`)
+        .delete(`https://book-app-backend-om4l.onrender.com/books/${_id}`)
         .then((res) => res.data)
         .then(() => history("/"))
         .then(() => history("/books"));

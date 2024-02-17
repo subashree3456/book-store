@@ -37,7 +37,7 @@ const AddBook = () => {
 
   const sendRequest = async () => {
     await axios
-      .post("http://localhost:4000/books", {
+      .post("https://book-app-backend-om4l.onrender.com/books", {
         name: String(inputs.name),
         author: String(inputs.author),
         description: String(inputs.description),
